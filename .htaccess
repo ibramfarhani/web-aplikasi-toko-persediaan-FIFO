@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteRule ^action/([^/]*)$ index.php?action=$1 [L]
+RewriteRule ^action/([^/]*)/id/([^/]*)$ index.php?action=$1&id=$2 [L]
+RewriteRule ^table/([^/]*)/action/([^/]*)$ index.php?table=$1&action=$2 [L]
+RewriteRule ^table/([^/]*)/action/([^/]*)/id/([^/]*)$ index.php?table=$1&action=$2&id=$3 [L]
+RewriteRule ^table/([^/]*)/page/([^/]*)$ index.php?table=$1&page=$2 [L]
+RewriteRule ^table/([^/]*)$ index.php?table=$1&action=read [L]
